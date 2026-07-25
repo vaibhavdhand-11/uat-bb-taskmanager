@@ -1,4 +1,5 @@
 import { Wallet } from 'lucide-react'
+import { AppHeader } from '@/components/app-header'
 import { AddTransactionDialog } from '@/components/add-transaction-dialog'
 import { SummaryStats } from '@/components/summary-stats'
 import { SpendingChart, type CategoryDatum } from '@/components/spending-chart'
@@ -28,6 +29,7 @@ export default function Dashboard() {
 
   return (
     <main className="min-h-screen bg-background">
+      <AppHeader />
       <div className="mx-auto max-w-5xl px-6 py-10">
         <header className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
