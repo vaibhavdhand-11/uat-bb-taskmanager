@@ -3,26 +3,31 @@
    accessible positive/negative colors, so they are defined here rather than
    in the engine-owned index.css. */
 :root {
-  --positive: oklch(0.58 0.14 155);
-  --negative: oklch(0.58 0.19 25);
-  /* Distinct, muted category hues (the base theme charts are grayscale). */
-  --cat-1: oklch(0.62 0.13 255);
-  --cat-2: oklch(0.68 0.14 145);
-  --cat-3: oklch(0.72 0.14 60);
-  --cat-4: oklch(0.62 0.16 300);
-  --cat-5: oklch(0.66 0.15 20);
-  --cat-6: oklch(0.68 0.12 195);
+  --positive: oklch(0.52 0.13 150);
+  --negative: oklch(0.55 0.17 30);
+  /* Forest brand surface — deep pine green for the primary balance card etc. */
+  --forest: oklch(0.42 0.09 150);
+  --forest-foreground: oklch(0.97 0.02 150);
+  /* Woodland category palette (pine, moss, fern, bark, clay, sky-through-leaves). */
+  --cat-1: oklch(0.5 0.1 155);
+  --cat-2: oklch(0.62 0.13 135);
+  --cat-3: oklch(0.68 0.12 110);
+  --cat-4: oklch(0.5 0.07 75);
+  --cat-5: oklch(0.6 0.13 45);
+  --cat-6: oklch(0.58 0.09 200);
 }
 
 .dark {
-  --positive: oklch(0.72 0.15 155);
-  --negative: oklch(0.7 0.18 22);
-  --cat-1: oklch(0.7 0.13 255);
-  --cat-2: oklch(0.74 0.14 145);
-  --cat-3: oklch(0.78 0.14 60);
-  --cat-4: oklch(0.7 0.16 300);
-  --cat-5: oklch(0.72 0.15 20);
-  --cat-6: oklch(0.74 0.12 195);
+  --positive: oklch(0.72 0.14 150);
+  --negative: oklch(0.68 0.17 28);
+  --forest: oklch(0.38 0.08 150);
+  --forest-foreground: oklch(0.96 0.02 150);
+  --cat-1: oklch(0.64 0.11 155);
+  --cat-2: oklch(0.72 0.13 135);
+  --cat-3: oklch(0.76 0.12 110);
+  --cat-4: oklch(0.64 0.08 75);
+  --cat-5: oklch(0.7 0.13 45);
+  --cat-6: oklch(0.7 0.09 200);
 }
 
 .text-positive {
@@ -36,4 +41,13 @@
 }
 .bg-negative-soft {
   background-color: color-mix(in srgb, var(--negative), transparent 88%);
+}
+.bg-forest {
+  background-color: var(--forest);
+}
+.text-forest {
+  color: var(--forest);
+}
+.text-forest-foreground {
+  color: var(--forest-foreground);
 }
