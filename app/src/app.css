@@ -1,0 +1,39 @@
+/* App-level semantic tokens (income / expense) layered on top of the engine
+   theme. The base theme is grayscale; a finance tracker needs distinct,
+   accessible positive/negative colors, so they are defined here rather than
+   in the engine-owned index.css. */
+:root {
+  --positive: oklch(0.58 0.14 155);
+  --negative: oklch(0.58 0.19 25);
+  /* Distinct, muted category hues (the base theme charts are grayscale). */
+  --cat-1: oklch(0.62 0.13 255);
+  --cat-2: oklch(0.68 0.14 145);
+  --cat-3: oklch(0.72 0.14 60);
+  --cat-4: oklch(0.62 0.16 300);
+  --cat-5: oklch(0.66 0.15 20);
+  --cat-6: oklch(0.68 0.12 195);
+}
+
+.dark {
+  --positive: oklch(0.72 0.15 155);
+  --negative: oklch(0.7 0.18 22);
+  --cat-1: oklch(0.7 0.13 255);
+  --cat-2: oklch(0.74 0.14 145);
+  --cat-3: oklch(0.78 0.14 60);
+  --cat-4: oklch(0.7 0.16 300);
+  --cat-5: oklch(0.72 0.15 20);
+  --cat-6: oklch(0.74 0.12 195);
+}
+
+.text-positive {
+  color: var(--positive);
+}
+.text-negative {
+  color: var(--negative);
+}
+.bg-positive-soft {
+  background-color: color-mix(in srgb, var(--positive), transparent 88%);
+}
+.bg-negative-soft {
+  background-color: color-mix(in srgb, var(--negative), transparent 88%);
+}
