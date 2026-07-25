@@ -10,7 +10,7 @@ type SummaryStatsProps = {
 export function SummaryStats({ balance, income, expenses }: SummaryStatsProps) {
   return (
     <section className="grid gap-4 sm:grid-cols-3">
-      <div className="rounded-xl bg-primary p-6 text-primary-foreground">
+      <div className="rounded-xl bg-forest p-6 text-forest-foreground">
         <div className="flex items-center gap-2 text-sm opacity-80">
           <Wallet className="size-4" />
           Net balance
