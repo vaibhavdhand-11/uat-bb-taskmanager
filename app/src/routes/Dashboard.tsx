@@ -38,7 +38,7 @@ export default function Dashboard() {
             </span>
             <div>
               <h1 className="font-heading text-2xl font-semibold tracking-tight text-foreground">
-                              Finance-Tracker
+                Vaibhav Tracker
                             </h1>
               <p className="text-sm text-muted-foreground">
                 Your income, spending and balance at a glance.
