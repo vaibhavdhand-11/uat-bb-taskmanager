@@ -37,7 +37,14 @@ export default function Dashboard() {
               <Wallet className="size-5" />
             </span>
             <div>
-              <h1 className="font-heading text-2xl font-semibold tracking-tight text-foreground">
+              <h1
+                className="font-heading text-2xl font-semibold tracking-tight text-foreground"
+                style={{
+                  textAlign: "left",
+                  color: "#F56D6D",
+                  lineHeight: "32px",
+                  fontWeight: "900"
+                }}>
                 Vaibhav Tracker
                             </h1>
               <p className="text-sm text-muted-foreground">
