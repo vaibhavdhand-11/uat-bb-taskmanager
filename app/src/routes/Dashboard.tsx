@@ -45,7 +45,7 @@ export default function Dashboard() {
                   lineHeight: "32px",
                   fontWeight: "900"
                 }}>
-                Tracker
+                tracker 2
                             </h1>
               <p className="text-sm text-muted-foreground">
                 Your income, spending and balance at a glance.
